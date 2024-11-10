@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "start": "node dist/index.ts",
+    "start": "ts-node dist/index.ts",
     "build": "tsc",
+    "heroku-postbuild": "npm run build",
     "dev": "nodemon --exec ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "knex migrate:latest",
