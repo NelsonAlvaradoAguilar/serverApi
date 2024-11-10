@@ -21,7 +21,7 @@ app.use(cors(corsOptions));
 app.use('/api', usersRoutes);
 
 app.get('/api', (req: Request, res: Response) => {
-  res.send('Hello, TypeScript with Node.js!');
+  res.send('thank you');
 });
 
 app.listen(PORT, () => {
