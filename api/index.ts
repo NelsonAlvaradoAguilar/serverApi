@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // Allow only this origin
+  origin: 'http://localhost:5173', // Allow only this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
 };
 
