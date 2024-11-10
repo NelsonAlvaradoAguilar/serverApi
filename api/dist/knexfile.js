@@ -9,7 +9,7 @@ dotenv_1.default.config();
 // Define Knex configuration
 const config = {
     development: {
-        client: 'pg',
+        client: 'mysql2',
         connection: {
             host: process.env.DB_HOST,
             database: process.env.DB_NAME,
@@ -25,7 +25,7 @@ const config = {
         },
     },
     staging: {
-        client: 'pg',
+        client: 'mysql2',
         connection: {
             host: process.env.DB_HOST,
             database: process.env.DB_NAME,
@@ -41,7 +41,7 @@ const config = {
         },
     },
     production: {
-        client: 'pg',
+        client: 'mysql2',
         connection: {
             host: process.env.DB_HOST,
             database: process.env.DB_NAME,
