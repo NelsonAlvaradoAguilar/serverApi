@@ -1,7 +1,8 @@
 {
-  "name": "api",
+  "name": "serverapi",
   "version": "1.0.0",
-  "main": "index.ts",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "ts-node index.ts",
     "build": "tsc",
@@ -13,17 +14,6 @@
     "migrate:rollback": "knex migrate:rollback",
     "seed": "knex seed:run"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1",
-    "knex": "^3.1.0",
-    "mysql2": "^3.11.4",
-    "pg": "^8.13.1"
-  },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
@@ -32,5 +22,8 @@
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
