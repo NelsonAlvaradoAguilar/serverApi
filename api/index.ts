@@ -1,13 +1,13 @@
 import express, { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import usersRoutes from './routes/usersRoutes'; // Corrected to include semicolon
-
+import path = require('path');
 // Load environment variables from a .env file
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 8989;
-
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 
